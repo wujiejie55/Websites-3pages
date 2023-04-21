@@ -1,0 +1,372 @@
+@import url(reset.css);
+
+/*layout*/
+.wrap{
+    width: 1024px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+.header{
+    height: 560px;
+}
+.indexheader, .courseheader, .faqheader{
+    font-size: 50px;
+    color:#fff;
+}
+.courseheader p, .faqheader p{
+    color:#00cf99;
+    font-size: 25px;
+    padding-top: 20px;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    background: rgba(50,50,50,0.5);
+}
+h2 a{
+    display: block;
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/logo.png);
+    width: 182px;
+    height: 36px;
+    text-indent: 101%;
+    overflow:hidden;
+    white-space: nowrap;
+}
+.banner .menu{
+    display: flex;
+}
+.banner .menu li a{
+    display: block;
+    text-decoration: none;
+    color:#fff;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 30px 20px;
+    border-bottom: 6px solid transparent;
+}
+.banner .menu li a:hover{
+    color:#00cf99;
+    border-bottom: 6px solid #00cf99;
+}
+.h3style{
+    color:#00cf99;
+    font-size: 35px;
+    margin-top:60px;
+}
+.h3style span{
+    color:#9b9b9b;
+    font-size: 22px;
+}
+.signbtn{
+    padding: 60px 0 140px 43px;
+}
+.signbtn button{
+    width: 220px;
+    height: 52px;
+    background-color: #00cf99;
+    color:#fff;
+    border-radius: 5px;
+    font-size: 17px;
+    border:none;
+    cursor:pointer;
+}
+.signbtn button:hover{
+    font-weight: bold;
+}
+.indexform form input,
+.faqform form input,
+.faqform form textarea{
+    border-radius: 5px;
+    border:none;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-indent: 20px;
+    width: 460px;
+}
+.btn{
+    width: 140px;
+    background-color: #00cf99;
+    color:#fff;
+    cursor: pointer;
+    border:none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 0;
+    float:right;/*無作用?*/
+
+}
+.btn:hover{
+    font-weight: bold;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 40px;
+    background-color: #323228;
+    position: relative;
+}
+.footer::after{
+    content:'© 2018 hexschool';
+    color:#868684;
+    position:absolute;
+    left: 80px;
+    top: 75px;
+}
+.footer ul{
+    display: flex;
+}
+.footer ul li a{
+    padding-left: 20px;
+}
+
+/*index*/
+.indexheader{
+    line-height: 1.5;
+    padding: 110px 0 0 43px;
+}
+.indexheader span{
+    color:#00cf99;
+}
+.indexcourse .title,
+.indexcourse ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 43px;
+}
+.indexcourse .title a{
+    display: block;
+    text-decoration: none;
+    color:#00cf99;
+    border:2px solid #00cf99;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin:70px 0 33px 0;
+}
+.indexcourse .title a:hover{
+    font-weight: bold;
+}
+.indexcourse .item{
+    width: 300px;
+    margin: 9px;
+    box-shadow: 1px 1px 5px 3px #cccccc;
+    padding: 27px 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.indexcourse .item h4{
+    font-size: 20px;
+    margin: 22px 0;
+    font-weight: bold;
+}
+.indexcourse .item p{
+    line-height: 1.5;
+    color:#868684;
+}
+.indexcompare{
+    padding: 0 43px;
+}
+.indexcompare table{
+    margin: 33px 0 60px 0;
+    width: 940px;
+}
+.indexcompare tr th, tr td{
+    border-top:1px solid #ececec;
+    border-bottom:1px solid #ececec;
+    text-align: center;
+    padding: 18px 0;
+}
+.indexcompare tr th{
+    background-color: #ececec;
+}
+.indexcompare tr:hover{
+    background-color: #f7f7f7;
+}
+.indexcompare .highlight{
+    color:#00cf99;
+}
+.indexform{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 395px;
+    padding: 0 45px;
+    background-color: #ececec;
+}
+.indexform h4{
+    font-size: 30px;
+}
+.indexform form{
+    display: flex;
+    flex-direction: column;
+}
+.indexform form input{
+    height: 50px;
+}
+
+
+
+/*course*/
+.courseheader{
+    padding: 110px 0 0 43px;
+    position: relative;
+}
+.courseheader-img{
+    display: flex;
+    position: absolute;
+    width: 108px;
+    height: 147px;
+    top:120px;
+    right: 370px;
+}
+.courseheader-img img{
+    padding: 0 10px;
+}
+.coursecontent{
+    padding: 0 200px;
+}
+.coursecontent .teacher{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.5;
+    height: 340px;
+}
+.coursecontent h3{
+    color:#00cf99;
+    font-size: 35px;
+}
+.coursecontent .bkstyle{
+    color:#000;
+    font-size: 35px;
+}
+.coursecontent .teacher ul li{
+    list-style: disc;
+    padding-left: 25px;
+    color:#868684;
+    font-size: 17px;
+}
+.coursecontent .special{
+    padding: 30px 0 0 20px;
+    list-style: decimal;
+    line-height: 1.5;
+    font-size: 17px;
+}
+.coursecontent .special li{
+    padding-left: 25px;
+}
+.coursecontent .outline{
+    font-size: 17px;
+    padding-top: 30px;
+}
+.coursecontent .outline li{
+    padding: 15px 0 15px 40px;
+    color:#868684;
+}
+.coursecontent .outline .bold{
+    background-color: #ececec;
+    color:black;
+}
+.courseform{
+    margin-top: 60px;
+    background-color: #ececec;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 205px;
+}
+.courseform h4{
+    font-size: 30px;
+    padding-top: 155px;
+}
+.courseform form{
+    padding-top: 200px;
+}
+
+
+/*faq*/
+.faqheader, .faqheaderp{
+    text-align: center;
+}
+.faqheader{
+    margin: 110px 0 12px 0;
+}
+.searchbox{
+    display: flex;
+    width: 620px;
+    height: 53px;
+    margin: 50px auto;
+    position: relative;
+}
+.searchbox .box{
+    width: 620px;
+    border-radius: 5px;
+    border:none;
+}
+.searchbox button{
+    position: absolute;
+    right: 8px;
+    top:16px;
+    border:none;
+    background-color: #fff;
+    cursor: pointer;
+}
+.faqcontent{
+    padding: 0 120px;
+    letter-spacing: 2px;
+    line-height: 32px;
+}
+.faqcontent .q{
+    font-size: 20px;
+    margin-top: 35px;
+    color:#000;
+}
+.faqcontent .a,.faqcontent ol,.faqcontent li {
+    font-size: 17px;
+    color:#868684;
+}
+.faqcontent li a{
+    text-decoration: none;
+    color:#00cf99;
+}
+.faqcontent .installment{
+    list-style-type: decimal;
+    padding-left: 60px;
+}
+.faqcontent .return{
+    list-style-type: disc;
+    padding-left: 60px;
+}
+.faqcontent .installment li,
+.faqcontent .return li{
+    padding-left: 20px;
+}
+.faqcontent .returnp{
+    color:#000;
+    margin-top: 35px;
+}
+.faqform{
+    margin-top: 60px;
+    background-color: #ececec;
+    padding: 0 43px 40px 43px;
+    display: flex;
+    justify-content: space-between;
+}
+.faqform h4{
+    font-size: 30px;
+    margin-top: 140px;
+}
+.faqform form{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+}
+.faqform form input{
+    height: 50px;
+}
+.faqform form textarea{
+    height: 205px;
+    resize:none;
+}
